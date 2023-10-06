@@ -7,7 +7,7 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 ### `notebooks`
 
 * Simulation of quantum period finding algorithm.
-* Exploring the Floquet expansion for a harmonically driven 2-level system. 
+* Numerical accuracy of the time ordered exponential for a 2-level harmonically driven system. 
 * Tight-binding bandstructure of 2D materials based on PRB, Fang et. al. , 95 (20), 2015.
 * Band inversion in a 2-state model.
 

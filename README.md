@@ -7,7 +7,7 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 ### `notebooks`
 
 * Simulation of quantum period finding algorithm.
-* Exploring the accuracy of Trotter-Suzuki scheme in a Harmonically driven 2-level system against the exact computation of unitary evolution operator.
+* Exploring the Floquet expansion for a harmonically driven 2-level system. 
 * Tight-binding bandstructure of 2D materials based on PRB, Fang et. al. , 95 (20), 2015.
 * Band inversion in a 2-state model.
 

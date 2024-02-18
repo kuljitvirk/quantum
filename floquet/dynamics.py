@@ -168,7 +168,7 @@ def propagator(tmax, Hfunc, dt = 0.1, hermitian=True, psi=None):
         Uprev = U
     resid = np.array(resid)
 
-    return U,(psit,time)
+    return U,(psit,time),resid
 
 def time_domain_Hamiltonian(t,Edrive, HX, rotation=-1):
     """

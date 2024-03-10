@@ -1,4 +1,6 @@
 # Extracted Table 1 from the PDF file using pdftotext. The extract full text file is VoglPaper.txt.
+# Command used:
+# pdftotext -layout VoglPaper.pdf
 Compound            E(s ,a)       E(p,a)            E(s,c)              E(p,c)              E(s*,a)           E(s*,c)
 C                  -4.5450       3.8400            -4.5450              3.8400             11.3700           11.3700
 Si                 -4.2000       1.7150            -4.2000              1.7150              6.6850            6.6850

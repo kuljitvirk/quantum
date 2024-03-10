@@ -1,0 +1,2267 @@
+I. Phys. Chom. Solids Vol. 44, No. 5. pp. 365-378, 1983
+Printed in Great Britain.
+
+0022-3697/83/050365-14~3.0010
+@ 1983 Pergamon Press Lid.
+
+A SEMI-EMPIRICAL TIGHT-BINDING THEORY
+OF THE ELECTRONIC STRUCTURE
+OF SEMICONDUCTORS?
+P. VOGL
+Institut fiir Theoretische Physik, Universitlt Graz, Graz, Austria
+and
+HAROLD P. HJALMARSONSand JOHN D. Dow
+Department of Physics and Materials Research Laboratory, University of Illinois at Urbana-Champaign,
+Urbana, IL 61801,U.S.A.
+(Received 28 September 1981; accepted 19 November 1981)
+
+Ah&ret--A nearest-neighbor semi-empirical tight-binding theory of energy bands in zincblende and diamond
+structure materials is developed and applied to the following sp3-bonded semiconductors: C, Si, Ge, Sn, SIC, GaP,
+GaAs, GaSb, InP, InAs, InSb, AIP, AlAs, AISb, ZnSe, and ZnTe. For each of these materials the theory uses only
+thirteen parameters to reproduce the major features of conduction and valence bands. The matrix elements
+exhibit chemical trends: the differences in diagonal matrix elements are proportional to differences in free-atom
+orbital energies and the off-diagonal matrix elements obey the de2 rule of Harrison et al. The lowest energy
+conduction bands are well described as a result of the introduction of an excited s state, s*, on each atom.
+Examination of the chemical trends in this sp’s* model yields a crude but “universal” sp’s* model whose
+parameters do not depend explicitly on band gaps, but rather are functions of atomic energies and bond lengths
+alone. The “universal” model, although cruder than the sp’s* model for any single semiconductor, can be
+employed to study relationships between the band structures of different semiconductors; we use it to predict band
+
+edge discontinuitiesof heterojunctions.
+1. INTRODUCTION
+
+Now that semiconductors can be grown with varying
+composition a few atomic layers at a time [I], the number
+of conceivable new electronic devices and materials for
+improving the performance of existing devices will increase many-fold. This situation will put new demands
+on theorists to predict the properties of exotic semiconductors before the materials are even fabricated. This
+need to survey and simulate wide classes of semiconducting materials is not well met by most conventional
+theories, which concentrate on the accurate description
+of a few semiconductors. A notable exception, however,
+is the empirical Bond Orbital Model pioneered by
+Harrison[2,3]; this model provides a simple nearestneighbor tight-binding theory of valence bands and how
+they change as the chemistry of the semiconductor
+varies. With this model, one can estimate the nature of
+the filled, bonding valence bands of almost any semiconductor. However, a comparable model that also describes the empty anti-bonding conduction states is
+needed.
+In this paper we present such a model. We maintain
+the spirit of Harrison’s model of semiconductors by
+constructing a nearest-neighbor tight-binding theory
+which preserves and displays chemical trends, while
+successfully reproducing the unoccupied anti-bonding
+tPlease address reprint requests to Physics Department
+Reprint Secretary, Urbana.
+#Present address: Sandia National Laboratories, Division 5151,
+Albuquerque,NM 87185,U.S.A.
+
+lower conduction bands as well as the occupied bonding
+valence bands. In order to achieve these goals we have
+found, by trial and error, a chemically-correct tightbinding theory with a minimum number of parameters.
+We have replaced the actual semiconductor Hamiltonian
+with a pseudo-Hamiltonian[4] which (i) involves only a
+small number of localized pseudo-orbitals[S], (ii) has
+off-diagonal matrix elements that are significant only
+between states localized on adjacent sites, and (iii) has
+diagonal matrix elements that are determined by the free
+atom orbital energies of the semionductor’s chemical
+constituents and are only weakly influenced by the condensed-matter environment [6]. Such a replacement of
+the Hamiltonian was recently shown to produce an
+adequate
+pseudo-Hamiltonian[5,6].
+The resulting
+pseudo-orbital basis functions turn out to be atomiclike[6, ‘II-although atomic orbitals themselves (as were
+used in early linear combination of atomic orbitals
+models) do not provide an adequate pseudo-Hamiltonian
+basis. The spirit of the pseudo-Hamiltonian replacement
+procedure is analogous to that of conventional empirical
+pseudopotential theory [8]: the matrix elements of the
+pseudo-Hamiltonian are adjusted to fit optical band gaps,
+thereby constraining the theory to produce a reasonable
+band structure.
+Our model has all of the following properties: (i) the
+chemistry of sp3 bonding is manifestly preserved; (ii) the
+diagonal matrix elements of the model are related to the
+atomic energies of the chemical constituents, permitting
+exploration of chemical trends, simple treatment of al365
+
+366
+
+P. VOGL
+
+loys, and theories of semiconductors with defects; (iii)
+the off-diagonal matrix elements scale as the inverse
+square of the bond length (the d-* scaling rule of the
+Bond Orbital Model[2,3]); (iv) the model employs a
+minimum number of parameters, only nearest-neighbor
+matrix elements; and (v) the theory successfully
+reproduces not only the valence bands but also the
+lowest conduction band, even in indirect gap semiconductors. Other empirical tight-binding theories lack one
+or more of these properties.
+Theories with fewer than eight bands cannot describe
+the chemistry of localized states in covalently bonded
+semiconductors: the sp3 bonding of zincblende and
+diamond structures demands a basis set of at least four
+orbitals for each of the two atoms in the unit cell,
+namely, one s and three p orbitals per atom. Tight
+binding theories with more than nearest-neighbor matrix
+elements have been discussed extensively in the classic
+paper of Slater and Koster [9]. For example, a zincblende
+structure with an sp3 basis for each atom requires 9 and
+23 independent parameters for first- and second-nearestneighbor tight binding theories, respectively. In practice,
+attempts to determine extended-neighbor tight-binding
+parameters empirically are faced with so many adjustable parameters that least-squares fitsHO] to pseudopotential bands are normally employed. The resulting
+parameters, although quite useful for a single semiconductor, cannot be confidently used to discuss different
+semiconductors, such as alloys, by interpolation,
+because the fitting procedure is insensitive to the chemistry and chemical trends in the band structure
+parameters. Moreover, the basic spirit of empirical tightbinding theory is to minimize the number of empirical
+parameters by restricting the number of non-zero matrix
+elements. Therefore, to preserve simplicity and to permit
+easy identification of chemical trends in the band structure, we limit our consideration to a nearest-neighbor
+tight-binding theory.
+Attempts to fit the conduction bands of semiconductors with a nearest-neighbor sp’ tight-binding model have
+generally failed; for example, Chadi et nl.[ll] showed
+that such a model cannot produce an indirect fundamental band gap in zincblende or diamond materials, and
+hence cannot adequately describe even the lowest conduction bands of such important semiconductors as Si,
+Ge, AIAs, or GaP. The nearest-neighbor sp’ model fails
+to produce an indirect gap for Si because it omits essential physics: the excited atomic states, such as the s*
+state of atomic Si, couple with the anti-bonding p-like
+conduction states of Si near the X and L points of the
+Brillouin zone, and press these states down in energy.
+The present theory overcomes this deficiency by including an excited s-state, s*, on each atom, giving an sp3s*
+basis and a ten-band theory. The excited s* state repels
+the lower, unoccupied energy levels of the neighboring
+atom, and, in particular, presses the indirect relative
+conduction band minima down in energy.
+In an $-basis there are four diagonal matrix elements
+(s- and p-orbital energies for each atom) and five independent nearest neighbor transfer matrix elements
+(V(s, s), V(x, x), Vx, Y). Usa, PC), and WC, pa)).
+
+et al.
+
+These parameters all have physical significance; our
+procedure is to first determine them by fitting the pseudopotential bands[l2], and then to augment the basis
+with the s* state which, in this model, introduces a
+diagonal matrix element and off-diagonal matrix elements, only two of which we take to be non-zero: the
+couplings between s* and p orbitals on adjacent sites.
+The reason for treating the s* states a posterion’ is that
+they are simply devices for producing accurate indirect
+band edges. The inclusion of some such excited states in
+any minimal basis set is physically important-although
+the precise physics of the actual excited states need not
+be faithfully and quantitatively reproduced. One would
+see this by executing a first-principles band calculation
+for a semiconductor: various excited states (including d
+states) must be introduced in order to obtain the correct
+band structure, because these excited states repel the
+energy levels below them, influencing the width of the
+conduction bands in particular. A central physical point
+of the present work is that any excited state that depresses the states below can be used to improve the sp3
+nearest-neighbor model conduction bands; therefore
+extensions of the model to distant-neighbor matrix elements (with the proliferation of adjustable matrix elements) can be avoided by introducing an s* state.
+In Section 2 we present the model Hamiltonian; the
+determination of its matrix elements is discussed in
+Section 3. The resulting matrix elements have scaling
+properties discussed in Section 4. Our results are summarized in Section 5. Appendix A contains the predicted
+band structures, and the remaining Appendices discuss
+details of the model.
+2.MODEL HAMILTONIAN
+
+We construct the zincblende-structure tight-binding
+Hamiltonian in a basis of quasi-atomic functions
+(nbk) = N-“*z
+
+exp (ik.Ri + ik.vh)lnbRi).
+
+(1)
+
+The quantum numbers n run over the s, px, py, pz, and s*
+orbitals; the N wavevectors k lie in the first Brillouin
+zone[l3]; the site index b is either a (for anion) or c (for
+cation); the anion positions are Ri; and, in terms of the
+Kronecker 8, we have vb = S,,,(aJ2)(1, 1,l). The quasiatomic functions are Lowdin orbitals: symmetrically
+orthogonalized atomic orbitals [14]. The Schrlidinger
+equation for the Bloch functions Ikh) is
+(H - c(kh))lkA) = 0,
+
+(2)
+
+or, in this basis,
+3, {(nbk]Hlmb’k)
+
+- ~(kA)s,.,s,,,.}(mb’kIkA)
+
+= 0
+
+(3)
+
+The solutions are
+IkA) = 3 jnbk)(nbkjkA).
+
+(4)
+
+The band index A has ten values. The Hamiltonian
+matrix in the /r&k) basis is:
+
+The electronic structure of semiconductors
+
+0
+
+0
+
+0
+
+Q
+
+0
+
+367
+
+P. VooL et al.
+
+368
+
+where we have
+g,,(k)= cos (k,aJ4) cos (k&4) cos (k&4)
+- i sin (kl aJ4)
+x sin (k&4)
+
+sin
+
+(kd8,
+
+Y) = ~(P,uRIH~P,cR)>
+
+V(pa, SC) = 4(p,aRIHIscR).
+
+cos (k,uJ4),
+
+(7)
+
+Here we have b = a (anion) or b = c (cation). The above
+nine parameters, four diagonal energies and five transfer
+matrix elements V, determine the band structure in a
+nearest-neighbor, sp3, eight-band model. We include an
+excited s state, s*, in our ten-band sp’s* model, and
+permit only coupling to p-states on adjacent sites, omitting, for simplicity, the coupling to s-states on different
+sites [IS]. Thus we have four additional matrix elements,
+two diagonal energies and two transfer matrix elements
+
++ i cos (k, a J4)
+(k2uJ4)
+
+Vk
+
+and
+
+g2(k) = -sin (k,uJ4) cos (k2uJ4) sin (kjaJ4
+x sin
+
+X) = 4(p,aRIHl~,cR),
+
+V(su, pc) = 4(saR[Hlp,cR),
+
+g,(k) = - cos (k,aJ4) sin (k,uJ4) sin (k&t)
++ i sin (k,uJ4)
+x cos (k,uJ4)
+
+W,
+
+cos (kjaJ4,
+
+and
+g3(k)=-sin(k,uJ4)sin(kzuJ4)cos(k3uJ4)
++ i cos (k,uJ4)
+x cos (k2uJ4) sin (k3u J4).
+
+(6)
+
+E(s*, b) = (s*bR[H(s*bR),
+The independent tight-binding matrix elements, to be
+determined by fitting band structure data, are expressed
+in the localized Lowdin basis of symmetrically orthogonalized atomic orbitals (nbR):
+
+V(s*u, pc) = 4(s*aR[Hlp,cR),
+and
+V(pu, s*c) = 4(p,uRIHls*cR).
+
+(8)
+
+E(s, b) = (sbRIH(sbR),
+The empirical matrix elements are given in Table 1,
+and the band structure data used in determining them are
+given in Table 2.
+
+E(p, b) = (p,bRIHlp,bR),
+v(s, s) = 4(suR~H~scR),
+
+Table 1. Empirical matrix elements of the sp’s* Hamiltonian in eV. Although only three digits are significant, we
+reproduce the actual numbers used to generate the firmres in order to eliminate anv oroblem with round-off errors
+Compound
+
+C
+Si
+Ge
+Sn
+
+sic
+AlP
+AlAs
+Al Sb
+GE%P
+GaAs
+GaSb
+IIlP
+Ill&
+InSb
+2nSe
+ZnTe
+
+Compound
+
+E(s ,a)
+
+E(p,a)
+
+E(s,c)
+
+E(P,c)
+
+E(s*,a)
+
+E(s*,c)
+
+-4.5450
+-4.2000
+-5.8800
+-5.6700
+-8.4537
+-7.8466
+-7.5273
+-6.1714
+-8.1124
+-8.3431
+-7.3207
+-a.5274
+-9.5381
+-8.0157
+-11.8383
+-9.8150
+
+3.8400
+1.7150
+1.6100
+1.3300
+2.1234
+1.3169
+0.9833
+0.9807
+1.1250
+1.0414
+0.8554
+0.8735
+0.9099
+0.6738
+1.5072
+1.4834
+
+-4.5450
+-4.2000
+-5.8800
+-5.6700
+-4.8463
+-1.2534
+-1.1627
+
+3.8400
+1.7150
+1.6100
+1.3300
+4.3466
+4.2831
+3.5867
+3.0163
+4.1150
+3.6686
+2.9146
+4.0465
+3.7201
+2.9162
+5.9928
+5.2666
+
+11.3700
+6.6850
+6.3900
+5.9000
+9.6534
+8.7069
+7.4033
+6.7607
+8.5150
+8.5914
+6.6354
+8.2635
+7.4099
+6.4530
+7.5872
+7.0834
+
+11.3700
+6.6850
+6.3900
+5.9000
+9.3166
+7.4231
+6.7267
+6.1543
+7.1850
+6.7386
+5.9846
+7.0665
+6.7401
+5.9362
+8.9928
+8.2666
+
+-2.0716
+-2.1976
+-2.6569
+-3.8993
+-1.4826
+-2.7219
+-3.4643
+0.0183
+0.9350
+
+V(s,s)
+
+V(X,X)
+
+V(X,Y)
+
+-22.7250
+-8.3000
+-6.7800
+-5.6700
+-12.4197
+-7.4535
+-6.6642
+-5.6440
+-7.4709
+-6.4513
+-6.1567
+-5.3614
+-5.6052
+-5.5193
+-6.2163
+-6.5765
+
+3.8400
+1.7150
+1.6100
+1.3300
+3.0380
+2.3749
+1.8780
+1.7199
+2.1516
+1.9546
+1.5789
+1.8801
+1.8398
+1.4018
+3.0054
+2.7951
+
+11.6700
+4.5750
+4.9000
+4.0800
+5.9216
+4.8378
+4.2919
+3.6648
+5.1369
+5.0779
+4.1285
+4.2324
+4.4693
+3.8761
+5.9942
+5.4670
+
+V(sa,Pc)
+
+V(sc,pa)
+
+V(s*a,Pc)
+
+V(Pa,s*c)
+
+8.2109
+5.3749
+5.2191
+5.8939
+8.7138
+5.2508
+4.5216
+4.3662
+4.6541
+4.8422
+4.9895
+3.4623
+3.3744
+3.5666
+2.5891
+1.3196
+
+8.2109
+5.3749
+5.2191
+5.8939
+4.4051
+4.6386
+4.9950
+3.0739
+5.0950
+4.8077
+4.2180
+4.4814
+3.9097
+3.4048
+3.9533
+0.0000
+
+C
+
+Si
+Ge
+Sl-l
+sic
+AlP
+AlAs
+AlSb
+GaP
+GaAs
+GaSb
+IllP
+InAS
+InSb
+ZllSe
+ZnTe
+
+15.2206
+5.7292
+5.4649
+4.5116
+9.4900
+5.2451
+5.1106
+4.9121
+4.2771
+4.4800
+4.9601
+2.2265
+3.0354
+3.7880
+3.4980
+5.9027
+
+15.2206
+5.7292
+5.4649
+4.5116
+9.2007
+5.2775
+5.4965
+4.2137
+6.3190
+5.7839
+4.6675
+5.5825
+5.4389
+4.5900
+6.3191
+5.8199
+
+The electronic structure of semiconductors
+
+369
+
+Table 2. Bond lengths d (in Angstroms) and band structure energies at symmetry points (zincblende notation) in
+eV
+”
+”
+C
+C
+C
+”
+”
+C
+Compound
+
+d
+
+r1
+
+r1
+
+r15
+
+Xl
+
+x3
+
+x5
+
+x1
+
+x3
+
+Reference
+
+C
+Si
+Ge
+SIl
+sic
+ALP
+
+1.54
+2.35
+2.45
+2.81
+1.88
+2.36
+
+-27.2,
+-12.50
+-12.66
+-11.34
+-19.20
+-12.70
+
+la.18
+4.10
+0.90
+0.00
+5.90
+3.60
+
+7.68
+3.43
+3.22
+2.66
+6.47
+5.60
+
+-16.14
+-7.69
+-8.76
+-7 .a8
+-13.50
+-9.80
+
+-16.14
+-7.69
+-8.76
+-7 .a8
+-11.20
+-5.40
+
+-7.83
+-2.86
+-3.29
+-2.75
+-2.79
+-2.26
+
+5.48
+1.13
+0.76
+-0.42
+2.33
+2.50
+
+5.48
+1.13
+0.76
+-0.42
+5.41
+3.00
+
+ca)(b)
+(b)(c)
+(b) {c)
+(c)
+(d)
+(e)(f)
+
+AlAs
+AlSb
+GaP
+GaAs
+
+2.45
+2.66
+2.36
+2.45
+
+-11.73
+-10.13
+-13.19
+-12.55
+
+3.04
+1.88
+2.88
+1.55
+
+4.57
+4.00
+5.24
+4.71
+
+-9.52
+-8.30
+-9.46
+-9.83
+
+-5.69
+-5.03
+-7.07
+-6.88
+
+-2.20
+-1.80
+-2.73
+-2.89
+
+2.30
+1.98
+2.35
+2.03
+
+2.68
+2.41
+2.90
+2.38
+
+cgl(h)
+(i)(j)
+{c)(k)
+{b)(c)
+
+GaSb
+InP
+IllAs
+InSb
+ZnSe
+
+2.64
+2.54
+2.62
+2.81
+2.45
+
+-12.00
+-11.42
+-12.69
+-11.71
+-14.50
+
+0.78
+1.41
+0.43
+0.23
+2.68
+
+3.77
+4.92
+4.63
+3.59
+7.50
+
+-9.33
+-8.91
+-10.20
+-9.20
+-12.50
+
+-6.76
+-6.01
+-6.64
+-6.43
+-5.60
+
+-2.37
+-2.06
+-2.37
+-2.24
+-2.65
+
+1.21
+2.44
+2.28
+1.71
+4.54
+
+1.28
+2.97
+2.66
+1.83
+5.17
+
+(c)(g)
+(c)(g)
+cc)Igl
+{c)(g)
+(b)IU
+
+ZllTe
+
+2.64
+
+-13.31
+
+2.56
+
+6.75
+
+-11.90
+
+-5.67
+
+-2.41
+
+5.97
+
+6.94
+
+(bl(l>
+
+(a)
+(b)
+(c)
+(d)
+(e)
+{f)
+(g}
+{h)
+(iI
+{j)
+
+{k)
+(1)
+
+N. E. Brenev,
+Phys.
+Rev.
+BG,
+919 (1975).
+Bands and Bands in Semiconductors
+(Academic
+Press,
+J. C. Phillips,
+New York,
+(1973).
+J. R. Chelikowsky
+and M. L. Cohen,
+Phys.
+Rev.
+Bx,
+556 (1976).
+L. A. Hemstreet,
+Jr.
+and C. Y. Fang,
+Solid
+State
+Commun. 2,
+643 (1971).
+P. Vogl,
+unpublished.
+J. I. Pankove,
+Optical
+Processes
+in Semiconductors,
+(Prentice-Hall,
+Englewood
+Cliffs,
+New Jersey,
+1971).
+R. C. Weast
+and M. J. Astle,
+Eds.,
+CRC Handbook
+of Chemistry
+and Physics,
+59th Edition,
+(CRC Press,
+Inc.,
+Palm Beach,
+Florida,
+1978).
+A. Baldereschi.
+E. Hess.
+K. Maschke.
+H. Neumann.
+K. R. Schulze.
+and
+K. Unger,
+J. Phys.
+Cx;
+4709 (1977j.
+M. L. Cohen and T. K. Bergstresser,
+Phys.
+Rev. 141,
+789 (1966).
+M. Cardona,
+J. Appl.
+Phys.
+Suppl.
+2,
+2151 (1961);
+T. E. Fischer,
+Phys.
+Rev. 139,
+Al228
+(1965);
+and M. Cardona,
+F. H. Pollak,
+and
+K. L. Shaklee,
+Phys.
+Rev.
+Letters,*,
+644 (1975).
+M. B. Sturge,
+R. T. Vink,
+F. P. J. Kuijpers,
+Appl.
+Phys.
+Letters>,
+49 (1978).
+D. J. Chadi,
+unpublished.
+
+w, Y) = (m[ar;,)
+
+3.DETERhiINATIONOF THE MATRIX
+ELEMENTS OF H
+
+- {E(P,cl - HP, a)12Y2,
+
+(a) The sp’ model
+In selecting a scheme for determining the matrix ele-
+
+ments, we concentrate on producing energy bands which
+mimic the nonlocal pseudopotential bands[l2], and, in
+particular, reproduce the spectral densities of states. The
+reason for paying close attention to the densities of
+states is our desire to employ the empirical Hamiltonian
+for localized defect calculations; such computations are
+extremely sensitive to minor redistributions of state
+density[l6-181.
+For clarity of presentation, we discuss only GaP in the
+main text, leaving the discussion of other semiconductors to Appendix A. We eschew least-squares
+methods[lO] of fitting the bands in favor of careful
+treatment of the k = 0 P-point and the k = (27r/aL)(l, 0,O)
+X-point of the Brillouin zone. (The highest valence band
+maximum of GaP is at r and the lowest conduction
+minima are at X.) In terms of the band energies at X and
+r (see Fig. I), we have expressions for the tight-binding
+matrix elements as functions of the diagonal energies
+E(l, c) and E(l, a):
+V(S,S) = (1/2)kqr,c)
+
+- w,V
+
+- [E(s,c) - E(s,a)]*}“*
+
+w, XI= m){[E(r;, - E(r;,)l*
+- [mh c) - m, ~)12Y,
+PCS Vol. 44, No. S-B
+
+- E(XJI*
+
+Vsa,PC) = U/N[E(s, a) + E(P, cl -4E(X,“)l*
+- [E(s, a) - E(p, c)]‘}“*,
+and
+V(pu, SC) = (1/2H[E(s, c) + E(P, a) - 4E(X,“)l*
+- [E(s, c) - E(p, a)]*}“*.
+
+(9)
+
+I11-t/“-2;
+LhT
+
+A
+
+XU,K
+
+WAVEVECTOR
+
+Z
+
+I-
+
+r
+
+Fig. I. The sp’ (solid) and pseudopotential (dashed; Ref. WI)
+band structures of GaP.
+
+370
+
+P. VOGL
+
+The sums of diagonal energies are related to the energies
+at I:
+E(s, c) + E(s, a) = E(T,“) + E(T,‘),
+and
+E(P, c) f E(p, a) = E(K) - E(K).
+
+(10)
+
+Seven of these nine energies are fixed by the band
+structure at seven points: I,, 115, X,, X,, and X5 in the
+valence band, and I, and 115 in the conduction band.
+(Note that the pseudopotential band structure is normally
+fit to reflectivity and photoemission data. Thus, by adjusting our tight-binding model to fit that band structure,
+we are, in reality, fitting the primary data.)
+The remaining two energies are determined by fixing
+the differences in diagonal matrix elements:
+D, = E(l, c)-E(l,
+
+a).
+
+(11)
+
+These are assumed to be functions of the atomic orbital
+energies w(1, b) of Table 3. Expanding D, to lowest order
+in the neutral atom energies and recognizing that D, = 0
+for homonuclear semiconductors, we find
+D, =E(l,c)-E(l,a)=/.?,(w(l,c)-
+
+~(],a)).
+
+(12)
+
+The constants /3, should be nearly equal for a variety of
+zincblende hosts, because the elements forming the
+zincblende compounds are all chemically similar (especially the III-V’s). Indeed, we find p, = 0.8 and &, = 0.6
+using the procedures of Appendix B. These last two
+constraints serve to completely determine the parameters
+of the sp3 band structure.
+A crucial test for the internal consistency of the model
+is provided by the amount of charge transferred from the
+cation to the anion. The same diagonal matrix elements
+can be used for an atom in different chemical environments only if the pseudoatoms are nearly neutral entities.
+Once we have fixed the Hamiltonian parameters, we
+calculate the net charge per anion or cation by performing an energy integral over valence band states of the
+local density of states[l9] per atom. We find this charge
+to be small indeed-typically one-tenth of an electron
+charge.
+A modicum of justification for the assumption that the
+differences D, are functions solely of atomic orbital
+energies is available from Bullett’s chemical pseudopoHarrison’s
+Bond-Orbital
+theory[6]
+and
+tential
+Model[2,3]. These methods of atomic and solid-state
+physics show that the electronic properties of an atom in
+a solid can be simulated by functions which depend on
+the atomic energies of neutral atoms; we are adopting a
+corresponding phenomenology.
+The computed sp’ band structure for GaP is given in
+Fig. 1 where it is compared with the pseudopotential
+band structure[l2], which was empirically adjusted to
+reproduce the available data. The valence bands of the
+sp3 model are good but the lowest conduction band,
+which has too much dispersion, does not have minima near
+the X points of the Brillouin zone.
+
+et al.
+
+(b) The sp%* model
+To remedy this deficiency of the sp’ model, we add an
+excited s state to the basis, and couple it to the p states
+in such a way that it can reduce the dispersion in the
+conduction band and drive the relative minima at X to
+lower energy (Fig. 2). This s* state is actually an ad hoc
+device that permits adjustment of the lowest conduction
+band near X (and also near L). Addition of s* is simpler
+than augmenting the basis with d orbitals, which would
+necessitate treatment of higher angular momentum states
+and the development of unique empirical prescriptions
+for d matrix elements. The addition of an excited state to
+the basis set is to be preferred over extension of the
+model to second and more distant neighbors because the
+repulsion of the conduction band by the excited state
+plays a central role in fixing the indirect gaps. Economy
+of parameters also argues against the proliferation of
+comparably sized matrix elements associated with allowance for second-nearest-neighbor interactions.
+The expected s* states are allowed to interact only
+with the p states on the nearest neighbor atom. The s*
+states, being at higher energy, repel the p-like conduction
+band levels near X and L downward in energy, producing the desired indirect band structure.
+The excited s* state energies E(s*) listed in Table 3
+were derived from spectroscopic energy levels by
+averaging over multiplets of angular momentum, as described in Appendix C.
+The coupling of the s* states to the p-state is chosen
+to reproduce the X-point energy of each of the two
+lowest conduction bands. For the zincblende lattice,
+V(s*a,pc) is adjusted to fit the XI’ energy and
+
+Table 3. Atomic orbital energies in eV for atoms from Columns
+II-VI of the periodic table, taken from Refs. [32,331
+Element
+
+-w(s)
+
+-w(p)
+
+Be
+B
+C
+N
+0
+F
+
+8.4121
+13.4560
+19.1932
+25.7130
+33.8454
+42.7729
+6.8831
+10.7011
+14.6840
+18.9425
+23.9232
+29.1832
+7.9563
+11.5490
+15.0520
+18.6568
+25.7771
+27.0011
+7.2043
+10.1366
+12.9598
+15.8258
+19.0563
+22.3347
+7.1008
+9.8226
+12.4107
+15.0051
+17.9022
+20.8189
+
+5.0500
+8.4281
+11.7868
+15.4388
+17.1877
+19.8564
+3.7600
+5.7106
+8.0814
+10.6544
+11.8963
+13.7740
+3.4816
+5.6712
+7.8156
+10.0497
+10.9575
+12.4327
+2.9920
+5.3661
+7.2089
+9.1033
+9.7870
+10.9665
+1.4960
+5.2332
+6.9520
+8.7039
+9.2847
+10.3324
+
+Mg
+Al
+Si
+P
+S
+Cl
+Zll
+Ga
+GE
+As
+Se
+Br
+cd
+Ill
+sn
+Sb
+Te
+&
+Tl
+Pb
+Bi
+PO
+Af
+
+-w(s*)
+
+4.26
+4.99
+7.94
+
+2.57
+3.11
+3.27
+5.27
+
+2.60
+3.04
+3.55
+4.89
+
+2.34
+2.64
+3.33
+4.19
+
+3.50
+
+The electronic structure of semiconductors
+
+371
+
+Q-s?
+
+haAS
+
+In’Sb
+I;?
+
+Gaib
+
+.AISb
+V(x,yld’
+
+,5(7~++~
+
+X&K
+WAVEVECTOR
+
+Z
+
+r
+
+7
+
+Fig. 2. The sp3s* model band structure (solid) compared with the
+pseudopotential (dashed: Ref. I121)band structure of GaP.
+
+Vk.sld’
+ItSbfi?nTe
+
+-502.3
+
+a$”
+
+2.9
+dl:l
+
+Fig. 4. Interatomic matrix elements V(s, s), V(x,x) and V(x,y)
+multipliedby the square of the bond length vs the bond length d.
+This illustrates the de2 scaling law. Semiconductors with small
+bond lengths, C and Sic, are off the scale of this figure.
+
+Moreover, the excited s* state matrix elements exhibit
+little variation from one semiconductor to another. (See
+Table 3).
+Enerqy
+
+(eV)
+
+Fig. 3. Comparison of the sp’s* model density of states with the
+photoemission data of Ref. [23].
+
+V(pa, s*c) is fixed to fit the X3’ energy. The parameters
+of the sp’ model are retained without alteration; the two
+parameters listed above would be zero in the sp3
+model [22].
+The resulting sp3s* band structure is in good
+agreement with the pseudopotential band structure (Fig.
+2) and the density of states agrees with the photoemission data[23] (Fig. 3).
+4.SCALINGPROPERTIES
+OF TAE MATRIXELEMENTS
+AND THR UNIVERSAL
+MODEL
+
+(a) Scaling properties of matrix elements
+To a good approximation, the off-diagonal matrix
+elements determined in the sp3 model have the d-*
+scaling law of the Bond Orbital Model (see Fig. 4), where
+d is the bond length (d = d(3)aJ4). This property is
+extremely useful for treating lattice relaxation around
+defects or at surfaces, because it gives prescriptions for
+the matrix elements in the relaxed material in terms of
+the perfect crystal matrix elements.
+The differences in diagonal matrix elements E(1, c)E(1, a), by construction, are proportional to the
+differences in atomic energies w(1, c) - w(1, a).
+
+(b) The “universal” model
+Except for the sums of diagonal matrix elements,
+E(1, c)+ E(1, a), which have not yet been related to
+atomic energies or bond lengths, the sp3s* model has all
+of its matrix elements approximately fixed by the atomic
+energies of the constituents and a set of “universal”
+constants. In other words, this work suggests that all
+zincblende and diamond semiconductors have electronic
+structures that can be predicted crudely from a simple
+“universal” model of the energy bands, which involves
+only atomic energies and a set of universal off-diagonal
+matrix elements.
+To formulate a “universal” model, we attempt to
+directly relate the sums E(l, c) + E(1, a) to atomic energies. We find, in analogy with eqn (ll), that, to a satisfactory approximation:
+E(l,c)tE(l,a)={l
+
+ta,}{w(l,c)t
+
+w(l,a)}.
+
+A modicum of justification for this form of a relationship
+between the energies in the solid and in the atom is given
+in Appendix D.
+Thus we have the following “universal” model of
+semiconductor electronic structure whose matrix elements for each semiconductor depend solely on the
+neutral-atom orbital energies of its constituents and its
+lattice constant. The diagonal matrix elements, which
+represent orbital energies within the solid, are defined in
+
+P. VOGL
+
+et
+
+al.
+
+* Sn
+* ZnTe
+’
+
+GaSb.
+
+InSb
+
+.AlSb
+
+Ge .
+l
+
+* znse
+
+I
+
+ix, I
+
+I
+
+I
+
+InAs
+
+*GoAs
+;IlAS
+
+Sl.
+
+* InP
+
+..GaP
+AIP
+WAVEVECTOR
+
+f
+
+Fig. 5. The “universal” model band structure of GaP (solid)
+compared with the pseudopotential results of Ref. [12].
+I
+2.5
+
+terms of sums and differences of neutral atomic orbital
+energies (see eqn (11) and eqns (D3) and (D4) of Appendix D). The values a, = 0.2 and ap = 0.4 follow from
+the empirical determination of /?, (see Appendix B) and
+the relation al = 1 -PI. The off-diagonal matrix elements, also known as transfer energies, are obtained by
+the de2 scaling rule: V(i) = p( i)d-‘. The five
+coefficients v”(i) (see Fig. 4) were obtained by averaging
+over the semiconductors listed in Table 1. The resulting
+coefficients in eV, are p(s, s) = -42.15, V”(x,x) = 11.19,
+~(x, y) = 27.88, p(sa, pc) = 29.61, and ~(sc, pa) =
+33.76.
+The universal model accurately simulates the valence
+band energies and spectral densities of states (Figs. 6 and
+7). The center of the conduction bands and their general
+features (lowest-energy moments) are also reproduced.
+However, the detailed features of the band structure,
+such as the optical bandgap, are not very accurately
+predicted. In addition to the broad features of the
+valence bands, the absolute energy placements, with
+respect to the vacuum reference, of the valence and
+conduction band edges are predicted.
+Predictions of the discontinuities of the valence band
+edges are directly made with the universal model, which
+estimates the absolute energies of the valence band
+
+7
+
+Experiment
+
+---
+
+E 2.0
+,o
+0
+2
+
+1.5
+
+E
+2
+In
+b
+a
+z
+
+1.0
+
+$g 0.5
+
+Energy
+
+(ev)
+
+Fig. 6. The density of states of the “universal” model of GaP
+(solid) compared with the data of Ref. [23].
+
+Bond
+
+I
+2.7
+Length
+
+I
+2.8
+
+I%,
+
+Fig. 7. Absolute energies of the valence band maxima calculated
+in the “universal” model vs bond length in Angstroms. This
+figure illustrates that the absolute valence band maxima are nearly a
+linear function of bond length.
+
+maxima. The valence band edge energy for each compound depends on the p-orbital energies of its atoms and
+the interatomic matrix elements V(x, x) = p(x, x)d-‘:
+
+J%= L&P, c) + E(P, all/2 - [(E(p, c) - E(p, a))’
++ 4 V(x, x)*11’*/2.
+
+Using the equilibrium bond length d for each compound,
+we predict E. and find that it is nearly a linear function
+of the bond length (Fig. 7). Such a linear trend with bond
+length suggests that experimenters’ efforts to match lattice constants of the alloys used in heterojunctions may
+also serve to nearly match valence band edges as well.
+That remains a useful strategy even though the band
+discontinuity of any specific lattice-matched heterostructure does not become exactly zero either in our
+theory or in the data. One should focus on the general
+trend displayed in Fig. 7, which clearly demonstrates that
+lattice-matched heterojunctions tend to have small
+valence band discontinuities.
+The predictions of band-discontinuities at heterojunction interfaces can be made directly from Fig. 7. The
+bandstructure discontinuity of the valence band,
+SE(A, B) = E(&; A)- E(r;,; E), is obtained from the
+maximum valence band energies, E(T&; A) and
+E(r;,; B), of the two interfaced semiconductors. The
+conduction band discontinuity SE(A, IQ follows from the
+known bandgaps of these two semiconductors. Our
+values for the Ge/Si and the Ge/GaAs interfaces, two of
+the few that have been measured and published, are
+within 0.5 eV agreement of the published data and other
+theoretical estimates (see Table 5). Predictions for other
+interfaces can be made by examining Fig. 7. For instance, AlAs and GaAs have very similar lattice constants, and thus their valence band discontinuity is small:
+
+373
+
+The electronicstructure of semiconductors
+Table 4. Spin-orbitparametersin eV {a}
+Compound
+
+AlAs
+
+0.28
+
+AlP
+C&4.9
+GoP
+GaSb
+InAs
+InP
+InSb
+ZllSe
+
+0.10
+0.34
+n In
+".I"
+0.80
+0.41
+0.14
+0.28
+0.45
+
+I a)
+
+0.421
+0.067
+0.421
+n
+n&7
+".Y",
+0.973
+0.421
+0.067
+0.973
+0.48
+
+0.024
+0.024
+0.174
+n
+17/r
+_.&,_
+0.179
+0.392
+0.392
+0.392
+0.074
+
+D. J. Chadi, Phys. Rev. Bs, 790 (1977). and references therein. The
+values of A0 In this reference are similar to more recently determined
+values of K. C. Rust@,
+P. Merle, D. Auvergne, and H. Hathieu, Solid
+State Commun.~,
+1201 (1976).
+
+Table 5. Band edge discontinuitiesin eV
+GelSi
+
+Bond orbital model
+Universal model
+Experiment
+
+0.38 {a1
+0.45
+0.24 to 0.17 {b)
+
+Ge/GaAs
+
+Bond orbital model
+Pseudopotential theory
+Universal model
+Experiment
+
+0.41 (a)
+0.35 1c)
+0.50
+0.36 to 0.76 (dl
+
+(al Ref. lZll31
+(b) A. G. Milnes and D. L. Feucht, lieterojunctionsand Metal-Semiconductor
+Junctions, (Academic Press, New York, 1972).
+cc) W. E. Picket, S. G. Louie, and M. L. Cohen, Phys. Rev. 811, 815 (1978).
+Id1 R. Dinzle. W. Wiwmann. and C. H. Henry, Phys. Rev. Letters z, 827
+(1974):
+-
+
+GE(AIAs, GaAs), = - 0.1 eV. Similarly, SE(Ge, ZnSe), =
+0.2 and SE(GaAs, ZnSe), = - 0.25 because Ge, GaAs and
+ZnSe have similar lattice constants [24]. Such agreement,
+which is quite good on the - 20 eV scale of the physics
+determining &E(Ig] nrnvnlrl=<
+r”.,.“‘..,” us to investigate other
+
+possible interfaces to determine those which will provide
+an interface with matched valence bands and lattice
+constants.
+We hope that this will stimulate experimenters to
+p<tnhlich
+thr
+~rnnn~ lnttirp
+atnmir
+_1__1..1..
+_.__rnnnertinnp
+__....__.._..I
+_..._..~
+.__..__micmatrh
+...."...__"...
+-.-....-
+
+energies, and band edge discontinuities at heterojunctions.
+SUMMARY
+
+r
+
+2 12
+2
+0
+
+p Atomic
+
+Energy
+
+Difference
+
+WI
+
+Fig. 8. The p-orbital energy differences, obtained from eqn (Bl)
+vs the p-orbital energy differences
+for neutral atoms. The slope
+of the dashed line is BP = 0.6.
+
+In summary, we have developed an sp’s* empirical
+nearest-neighbor tight-binding model that reproduces the
+valence and conduction band structures of major semiconductors.
+In separate work we have successfully applied this
+model to several problems. These include the following:
+the theory of deep impurity levels in homopolar and
+heteropolar
+semiconductors
+and
+semiconductor
+aiioysii7j; the theory of core excitons in the buiI~25j, at
+interfaces [26], and at surfaces [27]; surface state
+theory[28]; models of deep traps at interfaces[29] and
+lattice-relaxed surfaces[30]; and a theory of extended,
+paired substitutional defects[31].
+
+374
+
+P. VooL et al.
+
+The “universal” model extracted as an approximation
+to the sp’s* model promises to be a useful model for
+global theoretical studies of chemicaf trends in semiconductors; for example, estimates of the band discontinuities as a function of lattice mismatch for heterojunctions.
+Ac~nowfedge~enjs-We gratefully acknowledge stimulating
+conversations with J. D. Joannopouios, D. J. Chadi, W. A.
+Harrison, D. J. Wolford, and W. Y. Hsu and the support of the
+Department of Energy through the Illinois Materials Research
+Laboratory (DE-AC02-76ER01198)the Office of Naval Research
+(ONR-N-00014-77-C-0537),and the Fonds zur Fiirderung der
+wissenschaftlichen Forschung in Osterreich (Projekt Nr. 4236).
+
+The wavevectors of the first Brillouin zone are
+k = (2~U~~~,, UZ,&),
+with P, + u2t uj 5 3/2.
+The positions of the four atoms nearest to a central anion are
+
+vi =(aJ4)(1, I, l),
+vz=(aJ4)(-1,1.-l),
+vr =(aJ4)(1, - 1, - l),
+and
+
+REFERENCES
+1. Arthur J. R., J. Appf. Pkys.
+
+39, 4032 (1968); Cho A. Y., f.
+
+Vat. Sci. Technol. 8, 531 (1971); Matthews J. W. and
+Blakeslee A. E., I. Crysfal Growth 27, 118 (1974); 29, 273
+
+(1975);32, 265 (1976); Esaki L. and Chang L. L., Chit. Rev.
+0..I!l JIUlt:
+O‘“.”.I‘,.
+P_: 0,
+.Z Ill<
+J”llU
+lY_lIll-l,‘\
+(I,,“,.
+2. Harrison W. A., Pkys. Rev. B8,4487 (1973); Harrison W. A.
+and Ciraci S., Phys. Rev. 810, 1516(1974); Pantelides S. T.
+and Harrison W. A., Pkys. Rev. Bll, 3006 (1975).
+3. Harrison W. A., Electronic Sfr~cjure and the Froue~ies of
+Solids. Freeman, San Francisco (1980).
+4. The basic philosophy of this pseudo-Hamiltonian approach in
+a tight-binding basis is borrowed from the early k-space
+pseudopotential studies designed to produce the “smoothest”
+and most plane-wave-like pseudowavefunction. See, for
+example, Austin B. J.. Heine V. and Sham L. J.. Pkys. Rev.
+127,276 (1962).
+5. Louie S. G., Phys. Rev. 822, 1933(1980).
+6. Bullett D. W., i. Phys. CS, 2695, 2107 (1975); Sofid State
+Physics (Edited by H. Ehrenreich, F. Seitz, and D. Turnbull),
+Vol. 35, p. 129.Academic Press, New York (1980);V. Heine,
+Ibid. p. 1.
+7. Kane E. 0. and Kane A. B., Pkys. Rev. 817, 2691 (1978);
+Tejedor C. and Verges J. A., Pkys. Reu. B19,2283 (1979).
+8. Cohen M. L. and Heine V.. Solid State Physics (Edited bv H,
+Ehrenreich, F. Seitz and D. Turnbull); Vol.’ 24, pp. *38248,Academic Press, New York (1970).
+9. Slater J. C. and Koster G. F., Pkys. Rev. 94, 1498 (1954).
+10. Dresselhaus G. and Dresselhaus M. S., Phys. Reu. 160, 6491
+(1967); Pandey K. C. and Phillips J. C., Phys. Reu. B13,750
+(1976); Schulman J. N. and McGill T. C., Pkys. Rev. B19,
+6341 (1979); Daw M. S. and Smith D. L., J. Vat. Sci.
+Teckaof. 17, 1028(1980);Wang Y. and Joannopoulos J. D., f.
+Vat. Sci. Tecknol. 17,997 (1980).
+
+Il. Chadi D. J. and Cohen M. L., Pkys. Stat. Solidi 68, 405
+(1975).
+.I _. ..,
+IL. r_neukowsky J. R. and Cohen M. L., Pirys. I&u. il, 556
+
+(1976).
+13. The primitive vectors of the zincblende (fee) lattice are
+A, = (ntl2)(1, LO),
+A2= (oJ2)(0, 1, I),
+and
+
+and the positions of the anions in the twelve nearest unit cells are
+given by the non-zero combinations of vi - vi for i, j = 1,4.
+14. The Lowdin orbitals are
+InbRJ=
+
+q S-‘(nbRi, mb’R&r(mb’; r - Rj -v,),
+mI,‘,I
+
+where n(mb’; r - Rj - vg) is an atomic orbital with quantum
+numbers m centered at R, t vb’ The overlap matrix elements
+are
+S(nbR,, mb’Ri) =
+
+I
+
+d’ra*(nb;r-R,
+
+-v&(mb’;r-Ri-vr,,).
+
+By using Liiwdin orbitals instead of atomic orbitals, we obtain
+a secular equation of the form det (6 - H) = 0 instead of one
+with the troublesome overlaps: det (ES - H) = 0. See Lijwdin
+P. O., .r. Chem. Phys. 18,365 (1950).
+15. The following matrix elements have been set equal to zero:
+
+I *.nlrrI.*-n\ \s-on,n,sclr,,
+I.*_- 11.1
+._n\ all”
+__,,__“,r,,^*““\
+(s”un,“,s-c”,,
+(3”lq”,J““,.
+
+16. Hjalmarson H. P., Ph.D. Thesis, University of Illinois (1979).
+17. Hjalmarson H. P., Vogl P. Wolford D. J. and Dow J. D.,
+Pkys. Rev. Letters 44,810 (1980).
+18. The eigenvalue equation for an energy level associated with a
+localized defect has significant, partially cancelling contributions from states ?r 1OeV from the fundamental band
+gap, as shown in Ref. [l7]; thus an accurate knowledge of the
+density of states over a 20 eV range is’needed.
+19. To calculate the local density of states, we use a specialpoints tetrahedral-volume method based on the ideas of
+Lehman G. and Taut M., Phys. Stat. Sotidi (b) 54,469 (1972);
+the FORTRAN program is listed in Ref. [ 161.
+20. Ham F. S., Solid. St. Pkys. 1, 127 (1955) [Seitz F. and
+Turnbull D. (Eds.), Academic Press, New York (l95S)l.
+21. Abarenkov I. V. and Heine V.. Phil. Msg. 12, 529 (1965);
+Heine V. and AbarenkovI. V., Phil. Mug. 9,451 (1964).
+22. The matrix elements V(s*a,pc) and V(pa, s*c) are obtained
+by fitting the Hamiltonian in eqn (5) to the X-point data at
+X,c and Xrc. To do this, all other matrix elements are left
+unchanged, and V(s*a, pc) is determined by setting to zero
+the determinant that originates from one of the two three by
+three block matrices within the Hamiltonian:
+
+INS*, a)- &&‘ME(s, a)- E(X,c))(E(p, c)- E(X,‘))
+A3= h@)(l,O, If,
+
+where oL is the lattice constant. The primitive vectors of the bee
+reciprocal space are
+
+8: = (27fjaL)(l, 1; - I);
+a2=
+
+(2?r/a& 1,L l),
+
+and
+as =(2n/a~)(J, t, 1).
+
+- V(s*a, pcf*I - V(sa, pc)‘(E(s, a) - E(XIc)) = 0.
+
+The matrix element V@a, s*c) is obtained from the corresponding equation for E(X,“).
+71
+__I.Ley L., Pollak R. A., McFeely F. R., Kowalczyk S. P. and
+n,
+. 1
+anmey
+
+m .
+u. A.,
+
+r.,
+f-nys.
+
+.
+..^ I.%,. ,...I*%
+fieu. DY, wu (1~14~.
+
+24. Experiments have not been reported for these interfaces, but
+Ref. [3], p. 253, predicts a valence band discontinuity of
+about 2.0eV for both of these heterojunctions.
+2.5. Hj~marson H. P., Buttner H. and Dow J. D., Pkys. Lett 85A.
+293 (1981); Pkys. Rev. B&4,6010(1981).
+
+375
+
+The electronic structure of semiconductors
+18
+
+26. Allen R. E., Hjalmarson H. P., Vogl P., Wolford D. J.,
+Sankey 0. F. and Dow J. D., Int. J. Quantum Chem., Quantum Chem. Symp. 14,607 (1980).
+27. Hjalmarson H. P., Allen R. E., Biittner H. and Dow J. D., J.
+Vat. Sci. Technol. 17, 993 (1980).
+28. Allen R. E., Hjalmarson H. P. and Dow J. D., Surface Sci. 110,
+L625 (1981).
+29. Allen R. E., Buisson J. P. and Dow J. D., Appl. Phys. Lett. 39,
+975 (1981).
+30. Allen R. E. and Dow J. D., Phys. Rev. E 25.1423 (1982);Appl.
+Surface Sci. 11112,362 (1982);Dow J. D. and Allen R. E., J.
+
+r
+
+Vat. Sci. Technol. 20,659 (1982).
+31. Sankey 0. F., Hjalmarson H. P., Dow J. D., Wolford D. J.
+and Streetman B. G., Phys. Reo. Letters 45, 1656 (1980).
+32. Fisher C. E., Atomic Data 4, 301 (1972); see also Clementi E.
+and Roetti C., Atomic Data and Nuclear Tables 14, 177
+(1974).
+33. Moore C. E., Atomic Energy Levels, National Bureau of
+
+Standards Circular 467. U.S. Government Printing Office,
+Washington, D.C. (1949).
+34. When aL is infinite, (I, vanishes.
+35. For example, see Jennison D. R., Phys. Rev. B16,5147(1977).
+
+s Atomc
+
+Energy
+
+Difference
+
+(eV)
+
+Fig. 9. The s-orbital energy differences, obtained in terms of the
+X-point energy differences (see eqn B2) vs the s-orbital energy
+differences in the neutral atom. The slope of the dashed line is
+p, = 0.8.
+
+APPENDIX A
+
+Semiconductor
+
+bandstructures
+Figures 11 give the sp’s* band structures (solid lines) of the
+
+atomic energies, and we make the linear approximation
+
+various zincblende semiconductors, in comparison with the
+pseudopotential band structures[l2] when available (dashed
+lines).
+APPENDIX B
+
+Determination
+
+of PI
+
+An approximation 0,” to the difference Dp in the diagonal
+matrix elements for p orbitals can be extracted from data using a
+relationship[l I] among Dr,,the Tls conduction band energy, the
+spin-orbit splitting & of the highest two valence bands, and the
+atomic spin-orbit splittings of the anion and cation A, and A,:
+0;
+
+= (24, - A. - A,)E(&)/(A, -A,).
+
+OW
+
+E(1,c) = w(l, c)t a, w(l, a)
+
+FW
+
+to relate the energies in the solid, E(1, b), to neutral atom orbital
+energies w(l, b) of Table 3 (b = a for the anion and b = c for the
+cation). The coefficients u,, representing the admixture of the
+nearest neighbor, are small, and depend on the symmetry I and
+the lattice constant aL. In our crude model we ignore their
+dependence on lattice constant [34].
+The diagonal energies enter the calculation as sums S1 and
+differences D, which are defined by the atomic energies:
+S,=E(l,c)tE(l,a)=(ltal)(w(l,c)tw(l,a)),
+
+(Bl)
+
+By plotting 0,” vs the neutral atom energy difference w(p, c)w(p, a) for several semiconductors we find the average value 0.6
+for & = D,‘/(w(p, c) - w(p, a)). (See Fig. 8 and Table 3.)
+Exploiting the relationship obtained from the Hamiltonian for
+energies at the X point
+
+E(1, a) = ~(1, a) t a,w(l, c)
+
+(D3)
+
+and
+D,=E(l,c)-E(l,a)=(l-cr,)(w(l,c)-
+
+w(l,a)).
+
+(D4)
+
+E(s, c) - E(s, a) = E(p, c) - E(p, a) t E(X,")
+- E(X,")+
+&X3')
+
+-E(X,"),
+and plotting the r.h.s., while using 0,” for E(p, c)- E(p, a),
+against w(s, c)- w(s, a), we find /3s= 0.8 (Fig. 9).
+APPENDIX C
+
+The s and p orbital energies were obtained from Hartree-Fock
+calculations for neutral atoms[32]. The s* orbital energies were
+obtained from tabulated spectroscopic data[33]. Associated with
+each p orbital in a term of angular momentum J was a transition
+energy; an average energy was obtained by weighting each
+transition energy by a multiplicity factor of 2J t 1.
+
+20P, = 0.8
+18-
+
+/3p=0.7
+
+Orbital energies within the solid
+
+The Lowdin orbital of symmetry 1 at a specific site is composed primarily of the atomic orbital at that site with a slight
+admixture from neighboring sites. The component from an orbital at a neighboring site depends on its overlap with the primary
+orbital; this overlap decreases sufficiently rapidly with distance
+that to a good approximation we can ignore the effect of all but
+the nearest neighbor atoms. In the spirit of this model, we
+assume that the diagonal matrix elements are functions of the
+
+l
+
+tnse
+
+5:
+3 16cn”
+VP 14-
+
+12
+1
+1
+
+APPENDIX D
+
+/
+
+‘OIO 12
+
+1
+
+I
+
+1
+
+14
+
+16
+
+I8
+
+E(r~VS)+E(r;:)-E(r~)-E(r,‘)
+
+20
+(ev)
+
+Fig. 10. Shows the relationship of orbital energies in the solid to
+neutral atom orbital energies. See eqn (W). The fact that the
+points cluster along the diagonal of the figure indicates that the
+sums of the anion and cation orbital energy differences, obtained
+from the “universal” model (see eqns Dl and D2), agree with
+those directly determined from the experimental band structure.
+Here we use & =0.7; in Fig. 9 we would find a better fit with
+0, = 0.5. Thus we settle on the average value of 0.6.
+
+316
+
+P. Vocit. et al.
+
+navmg oenneo me absoiute energies of tight-binding orbitais
+within the solid, we can compute the corresponding energies of
+the tight-binding bandstructures. These cannot be directly compared with experiments such as photoemission, because the
+tight-binding bands do not include effects, mainly electron-electron correlation effects, which in general shift the bands to higher
+energy. Other more sophisticated methods, such as the Hartree
+Fock method, also produce bands that are too low in energy[35].
+Because such energy shifts are nearly constant, as demonstrated
+by the Bond Orbital Model[2,3], we can construct an indirect,
+internal test of the absolute energies of the tight-binding orbitals
+within the solid. The test consists of computing the differences of
+two quantities, $ and S,, which are then compared with the
+corresponding dtfferences computed from experimental band
+structures. From the tight-binding Hamiltonian we obtain
+E(K) f -WY,) - W,“) - W,‘)
+
+(D5)
+
+15
+
+AlSb
+
+-j5LLrkd&r r
+WAVEVECTOR
+
+for S,,-S, derived from bandstructure. In Fig. 10. that quantity is
+shown to compare favorably with
+$A
+
+2
+
+Fig. 11(c)
+
+= (2 - L$)(W(P.c)+ NP, a)) - (2 - Br)(w(s, cl + w(s, 0))
+(W
+
+obtained from eqns (D3) and (D4), using A = I - a,.
+
+XU.K
+WAVEVECTOR
+
+r
+
+z
+f
+
+Fig. II(d)
+Fig. I I(a)
+
+I5
+
+GoSQ
+1
+
+WAVEVECTOR
+
+Fig. II(b)
+
+f
+
+WAVEVECTOR
+
+Fig.
+
+I I(e).
+
+k
+
+311
+
+The electronic structure of semiconductors
+15
+
+InP
+
+-15L-rLi&rA
+WAVEVECTOR
+
+-15
+
+L
+
+A
+
+r
+
+X U,K
+
+.Z
+
+r
+
+r
+
+Fig. 1l(i).
+
+Fig. 1l(f).
+
+-15
+XU,K
+WAVEVECTOR
+
+A
+
+WAVEVECTOR
+
+7
+
+Z
+
+XU,K
+
+~hrA
+
+r
+
+WAVEi’ECTOR
+
+7;
+
+r
+
+z
+2
+
+Fig. llcj).
+
+Fig. 1l(g).
+
+::v
+I5 L
+
+A
+
+r
+
+L
+
+A
+
+WAVEVECTOR
+
+Fig. 1I(h).
+
+F
+
+A
+
+r
+
+A
+
+XU,K
+
+WAVEVECTOR
+
+Fig. 1l(k).
+
+.Z
+i?
+
+i-
+
+P. VooL et al.
+
+378
+
+-15
+
+-15
+LhT
+
+A
+X
+WAVEVECTOR
+
+U,K
+
+_Z
+k
+
+r
+
+L
+
+A
+
+A
+
+X
+
+WAVEVECTOR
+
+Pig. 1l(m).
+
+XU,K
+
+Z
+
+X
+
+t
+
+Fig. 1l(n).
+
+-10
+
+LAI-
+
+A
+
+WAVEVECTOR
+
+Fig. 1l(1).
+
+-15’
+
+r
+
+U,K
+
+Z
+
+I
+r
+
+-15
+
+I
+
+L
+
+A
+
+w
+
+l-
+
+A
+
+1
+
+X U.K
+
+WAVEVECTdR
+
+1
+
+l-
+
+f
+
+f
+
+Fig. 1l(o).
+
+Fig. 11. The sp’s* band structures for AlP, AIAs, AlSb, GaAs, GaSb, InP, InAs, I&b, Z&e, ZnTe, C, Si, Ge, Sn, and
+SIC. For simplicity, the symmetry points that were fit to experimental data are labelled with a uniform non-relativistic
+zincblende notation, even for diamond-structure crystals. A non-local pseudopotential band structure (dashed line) is
+included whenever one is available [ 121.
+
+

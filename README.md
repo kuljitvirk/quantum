@@ -29,9 +29,17 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 
 ### `tbm`
 
-* Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in PRB, Fang et. al. , 95 (20), 2015 arXiv: 1506.08860 [1].
-* Construction of the tight-binding Hamiltonian of [1] decomposed by hopping vectors, so that it can be put into Bloch-Pierels form for Floquet dynamics. 
+Zinc-Blende and Diamond strucutre tight binding models for sp3 bonded semiconductors. 
 
+* Tight binding parameters and the validated model implementation from the textbook by Cardona [1] and the 10-band model introduced in the seminal paper by Vogl [2]et. al. [Download](tbm/tbzincblende.py)
+
+Tight binding models for two-dimensional materials.
+* Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in PRB, Fang et. al. , 95 (20), 2015 arXiv: 1506.08860 [1].
+* Tight-binding Hamiltonian of [1] decomposed by hopping vectors, so that it can be put into Bloch-Pierels form for Floquet dynamics. [Download](tbm/tbtmdc)
+
+[1] Yu, Peter and Manuel Cardona, "Fundamentals of Semiconductors"
+
+[2] Vogl, P and Hjalmarson, H and Dow, J "A SEMI-EMPIRICAL TIGHT-BINDING THEORY OF THE ELECTRONIC STRUCTURE" , I. Phys. Chom. Solids Vol. 44, No. 5. pp. 365-378, 1983. [Download](tbm/VoglPaper.pdf)
 
 ### `utils`
 

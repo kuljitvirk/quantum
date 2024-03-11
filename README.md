@@ -16,8 +16,8 @@ This an evolving repository of codes and notebooks that I make to learn and expl
 
 * [Sherrington-Kirkpatrick model implementing an approximate optimization algorithm](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/aoa.py).
 * [Functions to compute continued fraction representation of a real number and vice versa](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/mathutils.py).
-* [Decomposition of arbitrary unitary matrix into a product of $2\times2$ unitaries](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/matrixutils.py).
-* [Class for constructing operator representations in computational basis of $n$ qubits](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/toric.py).
+* Decomposition of arbitrary unitary matrix into a product of $2\times2$ unitaries: [qprimitives.matrixutils](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/matrixutils.py).
+* Class for constructing operator representations in computational basis of $n$ qubits (see [qprimitives.toric](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/toric.py)).
 * [Period finding algorithm](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/qprimitives.py).
 * [Shor's factorization algorithm](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/qprimitives.py).
 

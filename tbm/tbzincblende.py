@@ -46,22 +46,18 @@ S1, S2, X1, Y1, Z1, X2, Y2, Z2 = 0,1,2,3,4,5,6,7
 # Data structure for parameters of the 8-band model
 TB08params_t = namedtuple('tbparams', ('Es','Ep','Vss','Vsp','Vxx','Vxy'))
 
-# States for the 10-band model by Vogl et al.
-SA, SC, XA, YA, ZA, XC, YC, ZC, SSA, SSC = 0,1,2,3,4,5,6,7,8,9
-# Data structure for the parameters for the 10-band model by Vogl et al.
-TB10params_t = namedtuple('tbparams10', 
-                          ('Esa','Epa','Esc','Epc','Essa','Essc','Vss','Vxx','Vxy','Vsapc','Vscpa','Vssapc','Vpassc'))
-
+# Data from Cardona's book Table 2.26 on Page 91.
 TB08params = dict(
     C  = TB08params_t(Es=0., Ep=7.40,  Vss=-15.20, Vsp=10.25, Vxx=3.00, Vxy=8.30),
     Si = TB08params_t(Es=0., Ep=7.20,  Vss= -8.13, Vsp= 5.88, Vxx=3.17, Vxy=7.51),
     Ge = TB08params_t(Es=0., Ep=8.41,  Vss= -6.78, Vsp= 5.31, Vxx=2.62, Vxy=6.82))
 
-TB10params = dict(
-    Si = TB10params_t(
-        Esa=-4.200,Epa=1.715,Esc=-4.200,Epc=1.715,Essa=6.685,Essc=6.685,
-        Vss=-8.300,Vxx=1.715,Vxy=4.575,Vsapc=5.7292,Vscpa=5.7292,
-        Vssapc=5.3749,Vpassc=5.3749))
+# States for the 10-band model by Vogl et al.
+SA, SC, XA, YA, ZA, XC, YC, ZC, SSA, SSC = 0,1,2,3,4,5,6,7,8,9
+# Data structure for the parameters for the 10-band model by Vogl et al.
+# The data for Vogl model is loaded by get_vogl_parameters() function below.
+TB10params_t = namedtuple('tbparams10', 
+                          ('Esa','Epa','Esc','Epc','Essa','Essc','Vss','Vxx','Vxy','Vsapc','Vscpa','Vssapc','Vpassc'))
 
 def line(u1,u2, spacing):
     """
@@ -153,6 +149,11 @@ def hamiltonian_tb08(t, kpoint):
     E[2:] = t.Ep
     H[np.diag_indices(8)] = E
     return H
+
+
+# =============================================================================
+# Vogl Model
+# =============================================================================
 
 def get_vogl_parameters(return_table=False):
     with open(os.path.join(os.path.dirname(__file__),'vogl_tb_parameters.txt')) as file:

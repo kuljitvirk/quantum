@@ -14,12 +14,12 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 
 ### `primitives`
 
-* Sherrington-Kirkpatrick model implementing an approximate optimization algorithm ([aoa.py](primitives/aoa.py)). 
-* Functions to compute continued fraction representation of a real number and vice versa ([mathutils.py](primitives/mathutils.py)).
-* Decomposition of arbitrary unitary matrix into a product of $2\times2$ unitaries ([matrixutils.py](primitives/matrixutils.py)).
-* Class for constructing operator representations in computational basis of $n$ qubits ([class State](primitives/toric.py)).
-* Period finding algorithm ([qprimitives.py](primitives/matrixutils.py)).
-* Shor's factorization algorithm  ([qprimitives.py](primitives/matrixutils.py)).
+* Sherrington-Kirkpatrick model implementing an approximate optimization algorithm ([primitives.aoa](primitives/aoa.py)). 
+* Functions to compute continued fraction representation of a real number and vice versa ([primitives.mathutils](primitives/mathutils.py)).
+* Decomposition of arbitrary unitary matrix into a product of $2\times2$ unitaries ([primitives.matrixutils](primitives/matrixutils.py)).
+* Class for constructing operator representations in computational basis of $n$ qubits ([primitives.toric.State](primitives/toric.py)).
+* Period finding algorithm ([primitives.qprimitives.py](primitives/matrixutils.py)).
+* Shor's factorization algorithm  ([primitives.qprimitives.py](primitives/matrixutils.py)).
 
 ### `floquet`
 

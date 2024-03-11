@@ -28,8 +28,6 @@ class MeanFieldSK(object):
         self.J    = np.triu(self.J,k=1)
         self.J = (self.J + self.J.T)/2
         self.J = self.J - np.diag(np.diag(self.J))        
-        # self.triuJ = np.triu(np.ones(self.J.shape,dtype=bool),k=1)
-        # self.Jvar = self.J[self.triuJ].var()
         # To remove degeneracy due to Z2 symmetry
         self.h    =self.J[:,-1]
         self.h[-1] = 0.

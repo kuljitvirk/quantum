@@ -1,5 +1,5 @@
 # quantum
-This an ever evolving repository of codes and notebooks that I make to learn and explore topics in quantum many-body, information, and computation. The explanations of the codes, their use, and technical discussion will be introduced as I complete it. 
+This an evolving repository of codes and notebooks that I make to learn and explore topics in solid-state physics, quantum many-body theory, information, and computation. 
 
 ## Contents
 

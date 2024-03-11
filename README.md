@@ -14,7 +14,7 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 
 ### `primitives`
 
-* [Sherrington-Kirkpatrick model implementing an approximate optimization algorithm](qprimitives/aoa.py).
+* [Sherrington-Kirkpatrick model implementing an approximate optimization algorithm](https://github.com/kuljitvirk/quantum/blob/main/qprimitives/aoa.py).
 * Functions to compute continued fraction representation of a real number and vice versa.
 * Decomposition of arbitrary unitary matrix into a product of $2\times2$ unitaries.
 * Class for constructing operator representations in computational basis of $n$ qubits.

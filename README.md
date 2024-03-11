@@ -37,9 +37,8 @@ Zinc-Blende and Diamond strucutre tight binding models for sp<sup>3</sup> bonded
 
 * Tight binding parameters and the validated model implementation from the textbook by Yu and Cardona [1], and the 10-band model with anti-moding s-orbitals, presented in the seminal paper by Vogl et al. [2] 
 
-
 Tight binding models for two-dimensional materials: [tbm.tbtmdc](tbm/tbtmdc.py).
-* Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in PRB, Fang et. al. , 95 (20), 2015 arXiv: 1506.08860.
+* Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in [3]
 * Tight-binding Hamiltonian of Fang et. al. decomposed by hopping vectors, so that it can be put into Bloch-Pierels form for Floquet dynamics. 
 
 

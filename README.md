@@ -35,7 +35,8 @@ The module [floquet.dyanmics](floquet/dynamics.py) implements the follwing funct
 
 Zinc-Blende and Diamond strucutre tight binding models for sp<sup>3</sup> bonded semiconductors: [tbm.tbzincblende](tbm/tbzincblende.py)
 
-* Tight binding parameters and the validated model implementation from the textbook by Yu and Cardona [1], and the 10-band model with anti-moding s-orbitals, presented in the seminal paper by Vogl et al. [2] 
+* Implementation from the textbook by Yu and Cardona along with the parameters of C, Si, and Ge from Chapter 2 [1].
+* 10-band model with anti-moding s-orbitals, presented in the seminal paper by Vogl et al. [2]. [Link to all the parameters in the paper](tbm/vogl_tb_parameters.txt).
 
 Tight binding models for two-dimensional materials: [tbm.tbtmdc](tbm/tbtmdc.py).
 * Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in [3]

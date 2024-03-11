@@ -12,6 +12,7 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 * Band inversion in a 2-state model.
 
 ### `primitives`
+
 * Sherrington-Kirkpatrick model implementing an approximate optimization algorithm. 
 * Functions to compute continued fraction representation of a real number and vice versa.
 * Decomposition of arbitrary unitary matrix into a product of $2\times2$ unitaries.
@@ -29,17 +30,18 @@ This an ever evolving repository of codes and notebooks that I make to learn and
 
 ### `tbm`
 
-Zinc-Blende and Diamond strucutre tight binding models for sp3 bonded semiconductors. 
+Zinc-Blende and Diamond strucutre tight binding models for sp<sup>3</sup> bonded semiconductors. 
 
-* Tight binding parameters and the validated model implementation from the textbook by Cardona [1] and the 10-band model introduced in the seminal paper by Vogl [2]et. al. [Download](tbm/tbzincblende.py)
-
-Tight binding models for two-dimensional materials.
-* Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in PRB, Fang et. al. , 95 (20), 2015 arXiv: 1506.08860 [1].
-* Tight-binding Hamiltonian of [1] decomposed by hopping vectors, so that it can be put into Bloch-Pierels form for Floquet dynamics. [Download](tbm/tbtmdc)
+* Tight binding parameters and the validated model implementation from the textbook by Yu and Cardona [1], and the 10-band model with anti-moding s-orbitals, presented in the seminal paper by Vogl et al. [2] [Download](tbm/tbzincblende.py)
 
 [1] Yu, Peter and Manuel Cardona, "Fundamentals of Semiconductors"
 
 [2] Vogl, P and Hjalmarson, H and Dow, J "A SEMI-EMPIRICAL TIGHT-BINDING THEORY OF THE ELECTRONIC STRUCTURE" , I. Phys. Chom. Solids Vol. 44, No. 5. pp. 365-378, 1983. [Download](tbm/VoglPaper.pdf)
+
+Tight binding models for two-dimensional materials.
+* Parameters for the tight binding model of MoS<sub>2</sub>,MoSe<sub>2</sub>,WS<sub>2</sub>,and WSe<sub>2</sub> proposed in PRB, Fang et. al. , 95 (20), 2015 arXiv: 1506.08860.
+* Tight-binding Hamiltonian of Fang et. al. decomposed by hopping vectors, so that it can be put into Bloch-Pierels form for Floquet dynamics. [Download](tbm/tbtmdc)
+
 
 ### `utils`
 

@@ -1,21 +1,34 @@
-"""
-This module implements the tight binding band structure model for Zinc Blende structure.
-The diamond structure has the same arrangement except that the atoms in the unit cell are identical species. 
-Therefore, the module works for both cases. 
+"""Tight binding band structure model for Zinc Blende structure.
 
-The 8-band model is an implementation of Chapter 2 of [1].
-The 10-band model is an implementation of [2]
+The module implements two types of models:
+
+8-band model : implementation from Chapter 2 of [1].
+10-band model: implementation from [2]
+
+The models are implemented in the following functions, respectively,
+
+hamiltonian_tb08
+hamiltonian_tb10
+
+The parameters can be defined using a namedtuple or Pandas Series. The naming
+scheme is defined in TB08params_t and TB10params_t namedtuple types.
+
+Parameters are in vogl_tb_parameters.txt extracted from the original paper [2] using pdftotext utility.
+
+Other paramters defined in the module:
+* Lattice vectors of the direct and reciprocal lattices
+* Symmetry directions for FCC: Delta, Lambda, Sigma
+* High symmetry points in Brillouin zone 
 
 [1] Yu, Peter and Manuel Cardona, "Fundamentals of Semiconductors"
 [2] "A Semi-empirical tight-binding theory of the electronic structure of semiconductors",
 Journal of Physics and Chemistry of Solids, 365, Vol 44 (1983)
 """
-import numpy as np
 import os
 from math import pi
-import pandas as pd
 from collections import namedtuple
-from scipy import linalg
+import numpy as np
+import pandas as pd
 
 lattice_vectors = np.array(
     [[0,1/2,1/2],
@@ -32,7 +45,7 @@ symmetry_directions_fcc = dict(
     Lambda = (1,1,1),
     Sigma  = (1,1,0)
 )
-
+# High symmetry points in the Brillouin zone
 bz_points = dict(
     G = 2*pi*np.array((0,0,0)),
     X = 2*pi*np.array((0,1,0)),    
@@ -75,16 +88,19 @@ def line(u1,u2, spacing):
 
 def circuit1(dk):
     """
-    L --> G --> X --> U, K, --> G
+    Creates a circuit in Brillouin zone with straight lines joining the points
+   
+    L --> G --> X --> U, K, --> G  
+    
     Returns:
-        Array of kpoints with spacing set by dk
-        Indices of the special points L, G, X, U, G
+        kpt : N x 3 Array of kpoints with spacing set by dk
+        idx : Indices of the special points L, G, X, U, G
     """
     kpt = [
         line(bz_points['L'], bz_points['G'],dk),
         line(bz_points['G'], bz_points['X'],dk),
         line(bz_points['X'], bz_points['U'],dk),
-        line(bz_points['K'],bz_points['G'],dk)
+        line(bz_points['K'], bz_points['G'],dk)
     ]
     idx = np.cumsum([0] + [len(k) for k in kpt])
     kpt = np.vstack(kpt)
@@ -92,10 +108,12 @@ def circuit1(dk):
 
 def phase_factors(kpoint):
     """
-    The four phase factors that arise from summing the Hamiltonian over nearest neighbors
-    of an atom in the Zincblende structure. 
+    The four phase factors that arise from summing the Hamiltonian over 
+    nearest neighbors of an atom in the Zincblende structure. 
+
+    g_alpha = exp( sum_alpha( d_alpha . kpoint ) )
     """
-    # The locations of the nearest neighbors
+    # The locations of the nearest neighbors: Page 89-90 of [1]
     dalpha = np.array([
         [ 1, 1, 1],
         [ 1,-1,-1],
@@ -108,9 +126,9 @@ def phase_factors(kpoint):
     g4 = expd[0] - expd[1] - expd[2] + expd[3]
     return g1, g2, g3, g4
 
-def hamiltonian_tb08(t, kpoint):
+def hamiltonian_tb08(tight_binding_parameters : TB08params_t, kpoint : np.ndarray):
     """
-    Implementation of the model in Table 2.2 of [1].
+    Implementation of the model in Table 2.25 on Page 90 [1].
     """
 
     kpoint = np.asarray(kpoint)
@@ -119,6 +137,7 @@ def hamiltonian_tb08(t, kpoint):
     g1, g2, g3, g4 = phase_factors(kpoint)
 
     H = np.zeros((8,8), dtype=complex)
+    t = tight_binding_parameters
     # We define the elements where gi are unconjugated. 
     # The conjugate transpose and then the diagonal part is added below
     H[S1, S2] =  t.Vss * g1
@@ -179,11 +198,34 @@ def get_vogl_parameters(return_table=False):
         return T
     return params
 
-def hamiltonian_tb10(t, kpoint):
+def hamiltonian_tb10(tight_binding_parameters : TB10params_t, kpoint : np.ndarray):
+    """
+    Creates a 10x10 Hamiltonian at a single k-point in the Brillouin zone.
+    The 10-band tight binding model is from Vogl et. al. [2].
+    Tight binding parameter table can be loaded using get_vogl_parameters()
+
+    The tight_binding_parametes argument can be the named tuple TB10params_t defined in this module.
+    It can alternatively be a pandas Series or Dataframe, or any other object in which the 
+    names defined in TB10params_t can be accessed using: tight_binding_paramters.<name>
+
+    The orbitals are ordered as defined at the top of this module, and repeated here:
+    SA, SC, XA, YA, ZA, XC, YC, ZC, SSA, SSC = 0,1,2,3,4,5,6,7,8,9
+
+    S,X,Y,Z,SS refer to the orbital type (S, p or S* in [2])
+    A refers to the orbital centered on the anion
+    C refers to the orbital centered on the cation
+
+    Args:
+        tight_binding_parameters: Tight binding Parameters as named in the tables in [2]. 
+        kpoint                  : 1 x 3 array with the k-vector 
+    Returns:
+        H : 10 x 10 complex numpy array with the orbitals ordered as defined above.
+    """
 
     g0,g1,g2,g3 = phase_factors(kpoint)
 
     H = np.zeros((10,10), dtype=complex)
+    t = tight_binding_parameters
 
     H[SA, SC] =  t.Vss   * g0
     H[SA, XC] =  t.Vsapc * g1

@@ -246,7 +246,7 @@ def quasi_energy_spectrum_time_domain(
     Hfunc = Hfunc_floquet_expansion if amplitude is None else Hfunc_direct
 
     T = 2*pi/Edrive
-    U, _ = propagator(T, Hfunc, dt=T/trotter_steps)
+    U, _, _ = propagator(T, Hfunc, dt=T/trotter_steps)
     if not return_states:
         W = linalg.eigvals(U)
     else:

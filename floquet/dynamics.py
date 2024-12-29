@@ -142,6 +142,10 @@ def propagator(tmax, Hfunc, dt = 0.1, hermitian=True, psi=None):
     Keywords:
         dt (float) : time-step in the Trotter-Suzuki scheme (see above)
         hermitian (boolean) : passed to matrix_exp
+        hermitian (bool) : If the Hamiltonian is hermitian
+        psi (initial state) : If not none, specifies the initial vector for the state at time t=0
+    Returns:
+        U, (psit,time),resid
     """
     dt = tmax/np.ceil(tmax/dt)
     time = np.arange(0, tmax+dt/2, dt)

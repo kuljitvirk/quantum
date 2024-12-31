@@ -1,5 +1,6 @@
 # quantum
 This an evolving repository of codes and notebooks that I make to learn and explore topics in solid-state physics, quantum many-body theory, information, and computation. 
+My continually updated notes on [quantum computing](docs/QuantumComputing01.pdf) and [error correction](docs/QuantumComputing02.pdf).
 
 ## Contents
 

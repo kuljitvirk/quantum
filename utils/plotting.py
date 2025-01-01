@@ -31,11 +31,19 @@ VERBOSE = False
 SAVEDIR = '.'
 
 show = plt.show
-def subplots(*args, **kwargs):
+def subplots(*args, xlabel=None,ylabel=None,title=None,**kwargs):
     aspect = kwargs.pop('aspect',None)
     fig,ax = plt.subplots(*args, facecolor='w', **kwargs)
     if aspect:
         ax.set_aspect(aspect)
+    if xlabel or ylabel:
+        if isinstance(ax,np.ndarray):
+            axes = ax
+        else:
+            axes = [ax]
+        for ax1 in axes:
+            ax1.set_xlabel(xlabel)
+            ax1.set_ylabel(ylabel)       
     return fig,ax
 
 def stylefile(filename):
@@ -56,16 +64,6 @@ def twinx(ax,clr_ax,clr_new,ylabel=''):
     ax2.spines['right'].set_color(clr_new)
     ax2.tick_params(axis='y', colors=clr_new)
     return ax2
-
-def subplots(facecolor='w',dpi=100,xlabel=None,**kwargs):
-    fig, axs = plt.subplots(facecolor=facecolor,dpi=dpi,**kwargs)
-    if xlabel is not None:
-        if isinstance(axs,list) or isinstance(axs,np.ndarray):
-            for ax in axs.flat:
-                ax.set_xlabel(xlabel)
-        else:
-            axs.set_xlabel(xlabel)
-    return fig,axs
 
 def axesoff(ax):
     ax.get_xaxis().set_visible(False)

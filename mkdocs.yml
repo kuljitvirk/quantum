@@ -1,0 +1,18 @@
+site_name: quantum
+nav:
+  - Qchem: index.md
+  - H2 PySCF: qchem/H2pyscf/H2pyscf.md
+  - H2 Second Quantized: qchem/H2secondQuant/H2_second_quantization.md
+  - Time Ordered: time_ordered/TimeOrderedExp.md
+  - Ramsey Scalar: RamseyScalar/RamseyScalar.md
+  - Band Inversion in Two Band Models: two-band-models/two-band-models.md
+  - ZincBlende Tight Binding Models: TightBindingZB/TightBindingZB.md
+theme: readthedocs
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
